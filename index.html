@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18181878048"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18181878048');
+  </script>
+
   <!-- ══ SEO BÁSICO ══════════════════════════════════════════════════════ -->
   <!-- EDITE: Title ≤ 60 chars. Ajuste headline para casar com o anúncio do Google Ads. -->
   <title>Studio de Pilates no Lago Sul, Brasília | Tatiane Lasneaux</title>
@@ -221,14 +231,7 @@
            2. Substitua a div.hero__bg--placeholder por: <img src="assets/images/hero.jpg" ...>
            3. Remova a div.img-placeholder interna -->
       <div class="hero__bg" role="img" aria-label="Interior do Studio de Pilates Tatiane Lasneaux">
-        <!-- Descomente após adicionar a foto real: -->
-        <!-- <img src="assets/images/hero.jpg" alt="Aula de Pilates no Studio Tatiane Lasneaux" width="1920" height="1080" loading="eager" fetchpriority="high"> -->
-
-        <!-- PLACEHOLDER — remova quando tiver a foto real -->
-        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(135deg,#241433,#4A2968);">
-          <svg width="48" height="48" fill="none" stroke="rgba(193,126,205,0.6)" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
-          <span style="color:rgba(193,126,205,0.75);font-size:13px;font-family:monospace;">FOTO HERO · 1920×1080 px · assets/images/hero.jpg</span>
-        </div>
+        <img src="assets/images/hero.jpg" alt="Aula de Pilates no Studio Tatiane Lasneaux" width="1920" height="1080" loading="eager" fetchpriority="high">
       </div>
 
       <div class="hero__overlay" aria-hidden="true"></div>
@@ -437,6 +440,7 @@
                    alt="Aula de Alongamento e Mobilidade no Studio Tatiane Lasneaux"
                    width="600" height="400"
                    loading="lazy"
+                   style="object-position: center 20%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
             <div class="service-card__body">
@@ -491,6 +495,7 @@
                    alt="Atendimento Personalizado de Pilates no Studio Tatiane Lasneaux"
                    width="600" height="400"
                    loading="lazy"
+                   style="object-position: center 18%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
             <div class="service-card__body">
@@ -1075,6 +1080,38 @@
     /* Ano dinâmico no rodapé */
     document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
+
+  <!-- Event snippet for CLIQUE WPP conversion -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18181878048/ZLBYCI3R378cEKDi5d1D',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+
+    /* Dispara a conversão "CLIQUE WPP" em todos os botões/links do WhatsApp (.wa-btn).
+       Os links abrem em nova aba (target="_blank"), então apenas registramos o evento
+       sem bloquear a navegação. */
+    document.querySelectorAll('.wa-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18181878048/ZLBYCI3R378cEKDi5d1D',
+          'value': 1.0,
+          'currency': 'BRL'
+        });
+      });
+    });
+  </script>
+
   <script src="js/main.js"></script>
 
 </body>
