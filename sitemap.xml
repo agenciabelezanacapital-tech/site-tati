@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lasneauxstudiopilates.com.br/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lasneauxstudiopilates.com.br/assets/images/hero.jpg</image:loc>
+      <image:title>Studio de Pilates Tatiane Lasneaux – Lago Sul, Brasília</image:title>
+      <image:caption>Aula de Pilates no Studio Tatiane Lasneaux, no Lago Sul, Brasília</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lasneauxstudiopilates.com.br/assets/images/sobre.jpg</image:loc>
+      <image:title>Ambiente do Studio de Pilates Tatiane Lasneaux</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lasneauxstudiopilates.com.br/assets/images/services/clinico.jpg</image:loc>
+      <image:title>Pilates Clínico no Lago Sul</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lasneauxstudiopilates.com.br/assets/images/services/reabilitacao.jpg</image:loc>
+      <image:title>Pilates para Reabilitação no Lago Sul</image:title>
+    </image:image>
   </url>
 </urlset>
