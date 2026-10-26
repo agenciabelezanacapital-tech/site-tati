@@ -56,7 +56,7 @@
   <!-- ══ FONTES GOOGLE ══════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <!-- ══ CSS ════════════════════════════════════════════════════════════ -->
   <link rel="stylesheet" href="css/styles.css">
@@ -290,7 +290,7 @@
       <a href="#hero" class="header__logo" aria-label="Studio de Pilates Tatiane Lasneaux – início">
         <img src="assets/images/logo.svg"
              alt="Studio de Pilates Tatiane Lasneaux"
-             width="56" height="56"
+             width="52" height="52"
              loading="eager">
       </a>
 
@@ -341,185 +341,169 @@
   <main id="main-content">
 
     <!-- ══════════════════════════════════════════════════════════════════
-         1. HERO
+         1. HERO — arco de concreto sobre a foto real do estúdio
     ═══════════════════════════════════════════════════════════════════════ -->
     <section id="hero" class="hero" aria-label="Apresentação do estúdio">
+      <div class="container hero__inner">
 
-      <!-- FOTO DE FUNDO DO HERO
-           Para usar uma foto real:
-           1. Coloque o arquivo em assets/images/hero.jpg
-           2. Substitua a div.hero__bg--placeholder por: <img src="assets/images/hero.jpg" ...>
-           3. Remova a div.img-placeholder interna -->
-      <div class="hero__bg" role="img" aria-label="Interior do Studio de Pilates Tatiane Lasneaux">
-        <img src="assets/images/hero.jpg" alt="Aula de Pilates em grupo no reformer do Studio Tatiane Lasneaux" width="1280" height="1191" loading="eager" fetchpriority="high" style="object-position: 65% 25%;">
-      </div>
-
-      <div class="hero__overlay" aria-hidden="true"></div>
-
-      <div class="container hero__content">
-
-        <!-- Badge prova social — acima da dobra -->
-        <div class="hero__badge" aria-label="Avaliação 5 estrelas no Google com 77 avaliações">
-          <div class="stars" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <strong>5,0</strong> no Google · 77 avaliações
-        </div>
-
-        <!-- H1 — EDITE para casar com o headline do seu anúncio no Google Ads -->
-        <h1 class="hero__title">
-          Pilates no Lago Sul<br>
-          há quase 20 anos<br>
-          transformando <em>corpos e vidas.</em>
-        </h1>
-
-        <p class="hero__subtitle">
-          Studio de Pilates no Lago Sul, Brasília: Pilates clínico, reabilitação e bem-estar em um espaço acolhedor e sofisticado. Atendimento especializado e personalizado para cada fase da vida.
-        </p>
-
-        <div class="hero__ctas">
-          <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-             class="btn btn--whatsapp btn--lg wa-btn"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Quero marcar minha aula experimental – abrir WhatsApp"
-             data-wa-location="hero-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            Quero marcar minha aula experimental
-          </a>
-          <a href="#sobre" class="btn btn--outline" aria-label="Conhecer mais sobre o estúdio">
-            Conhecer o estúdio
-          </a>
-        </div>
-
-        <div class="hero__social-proof">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-          <span>SHIS QI 11 Bloco M, Loja 10 · <strong>Lago Sul, Brasília</strong> · Estacionamento gratuito</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════════════════════════
-         2. BARRA DE AUTORIDADE
-    ═══════════════════════════════════════════════════════════════════════ -->
-    <section id="autoridade" class="proof-bar" aria-label="Números e diferenciais do estúdio">
-      <div class="container">
-        <div class="proof-bar__grid">
-
-          <div class="proof-item fade-in">
-            <div class="stars" aria-label="5 estrelas">
+        <div class="hero__copy fade-in">
+          <div class="hero__badge" aria-label="Avaliação 5 estrelas no Google com 77 avaliações">
+            <div class="stars" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-            <span class="proof-item__number">5,0</span>
-            <span class="proof-item__label">no Google<br>77 avaliações</span>
+            <span><strong>5,0</strong> no Google · 77 avaliações</span>
           </div>
 
-          <div class="proof-item fade-in fade-in--delay-1">
-            <span class="proof-item__number">20<span style="font-size:1.2rem">+</span></span>
-            <span class="proof-item__label">anos de<br>experiência</span>
+          <!-- H1 — EDITE para casar com o headline do seu anúncio no Google Ads -->
+          <h1 class="hero__title">
+            Pilates no Lago Sul há<br>
+            <span class="ink-note">quase 20 anos</span><br>
+            transformando corpos e vidas.
+          </h1>
+
+          <p class="hero__subtitle lede">
+            Studio de Pilates no Lago Sul, Brasília: Pilates clínico, reabilitação e bem-estar em um espaço acolhedor e sofisticado. Atendimento especializado e personalizado para cada fase da vida.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+               class="btn btn--whatsapp btn--lg wa-btn"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Quero marcar minha aula experimental – abrir WhatsApp"
+               data-wa-location="hero-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Quero marcar minha aula experimental
+            </a>
+            <a href="#sobre" class="hero__secondary-link" aria-label="Conhecer mais sobre o estúdio">
+              Conhecer o estúdio
+            </a>
           </div>
 
-          <div class="proof-item fade-in fade-in--delay-2">
-            <span class="proof-item__number">100%</span>
-            <span class="proof-item__label">personalizado<br>para você</span>
+          <div class="hero__social-proof">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            <span>SHIS QI 11 Bloco M, Loja 10 · <strong>Lago Sul, Brasília</strong> · Estacionamento gratuito</span>
           </div>
+        </div>
 
-          <div class="proof-item fade-in fade-in--delay-3">
-            <span class="proof-item__number">#1</span>
-            <span class="proof-item__label">referência em Pilates<br>no Lago Sul</span>
+        <div class="hero__frame fade-in fade-in--delay-2">
+          <div class="hero__arch" role="img" aria-label="Interior do Studio de Pilates Tatiane Lasneaux">
+            <img src="assets/images/hero.jpg" alt="Aula de Pilates em grupo no reformer do Studio Tatiane Lasneaux" width="1280" height="1191" loading="eager" fetchpriority="high" style="object-position: 65% 25%;">
+            <div class="hero__arch-plaque">Lago Sul · desde sempre</div>
           </div>
+        </div>
 
+      </div>
+    </section>
+
+    <div class="arch-divider arch-divider--up" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         2. PLACA CÍVICA DE PROVA
+    ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="autoridade" class="proof-plaque" aria-label="Números e diferenciais do estúdio">
+      <div class="container">
+        <div class="proof-plaque__row fade-in">
+          <span class="proof-plaque__item">
+            <span class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            5,0 no Google · 77 avaliações
+          </span>
+          <span class="proof-plaque__dot" aria-hidden="true">·</span>
+          <span class="proof-plaque__item">20+ anos no Lago Sul</span>
+          <span class="proof-plaque__dot" aria-hidden="true">·</span>
+          <span class="proof-plaque__item">100% personalizado</span>
+          <span class="proof-plaque__dot" aria-hidden="true">·</span>
+          <span class="proof-plaque__item">referência #1 em Pilates</span>
         </div>
       </div>
     </section>
+
+    <div class="arch-divider arch-divider--up" aria-hidden="true"></div>
 
     <!-- ══════════════════════════════════════════════════════════════════
          3. SOBRE O ESTÚDIO
     ═══════════════════════════════════════════════════════════════════════ -->
     <section id="sobre" class="sobre section-pad" aria-labelledby="sobre-title">
-      <div class="container">
-        <div class="sobre__grid">
+      <div class="container sobre__grid">
 
-          <div class="sobre__content fade-in">
-            <span class="section-label">Sobre o Estúdio</span>
-            <h2 id="sobre-title">Um espaço criado para transformar</h2>
-            <div class="ornament"><div class="ornament__dot"></div></div>
-            <p class="sobre__text">
-              Fundado há quase duas décadas por Tatiane Lasneaux no Lago Sul, Brasília, o estúdio nasceu da paixão pelo Pilates e pelo impacto real que ele causa na vida das pessoas. Em um ambiente projetado para acolher e inspirar, cada detalhe foi pensado para que você se sinta em casa — com sofisticação, cuidado e atenção plena.
-            </p>
-            <p class="sobre__text">
-              Nossa equipe é altamente qualificada e segue protocolos atualizados, atendendo crianças, adolescentes, adultos, idosos, gestantes e pessoas com necessidades especiais. Pilates é saúde. É bem-estar. É transformação de verdade.
-            </p>
-
-            <ul class="sobre__highlights" aria-label="Diferenciais do estúdio">
-              <li class="sobre__highlight-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-                Equipe com formação especializada e atualização constante
-              </li>
-              <li class="sobre__highlight-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-                Atendimento humanizado e plano individual para cada aluno
-              </li>
-              <li class="sobre__highlight-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-                Ambiente premium no coração do Lago Sul, Brasília
-              </li>
-              <li class="sobre__highlight-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-                Estacionamento amplo e gratuito para alunos e visitantes
-              </li>
-            </ul>
-
-            <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-               class="btn btn--whatsapp wa-btn"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Falar no WhatsApp para agendar aula experimental"
-               data-wa-location="sobre">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-              Falar no WhatsApp
-            </a>
-          </div>
-
-          <!-- FOTO DA FUNDADORA: assets/images/sobre.jpg -->
-          <div class="fade-in fade-in--delay-2">
-            <img src="assets/images/sobre.jpg"
-                 alt="Tatiane Lasneaux, fundadora do Studio de Pilates no Lago Sul, Brasília"
-                 width="1422" height="1600"
-                 loading="lazy"
-                 data-placeholder="assets/images/placeholder-card.svg"
-                 style="border-radius:20px;width:100%;height:auto;object-fit:cover;">
-          </div>
-
+        <!-- FOTO DA FUNDADORA: assets/images/sobre.jpg -->
+        <div class="sobre__frame fade-in">
+          <img src="assets/images/sobre.jpg"
+               alt="Tatiane Lasneaux, fundadora do Studio de Pilates no Lago Sul, Brasília"
+               width="1422" height="1600"
+               loading="lazy"
+               data-placeholder="assets/images/placeholder-card.svg">
         </div>
+
+        <div class="fade-in fade-in--delay-1">
+          <div class="section-head">
+            <h2 id="sobre-title">Um espaço criado para transformar, no coração do Lago Sul</h2>
+            <p class="lede">Fundado há quase duas décadas por Tatiane Lasneaux, o estúdio nasceu da paixão pelo Pilates e pelo impacto real que ele causa na vida das pessoas.</p>
+          </div>
+
+          <p>
+            Em um ambiente projetado para acolher e inspirar, cada detalhe foi pensado para que você se sinta em casa — com sofisticação, cuidado e atenção plena.
+          </p>
+          <p>
+            Nossa equipe é altamente qualificada e segue protocolos atualizados, atendendo crianças, adolescentes, adultos, idosos, gestantes e pessoas com necessidades especiais. <span class="ink-note">Pilates é saúde. É bem-estar.</span>
+          </p>
+
+          <ul class="sobre__highlights" aria-label="Diferenciais do estúdio">
+            <li class="sobre__highlight-item">
+              <span class="arch-bullet" aria-hidden="true"></span>
+              Equipe com formação especializada e atualização constante
+            </li>
+            <li class="sobre__highlight-item">
+              <span class="arch-bullet" aria-hidden="true"></span>
+              Atendimento humanizado e plano individual para cada aluno
+            </li>
+            <li class="sobre__highlight-item">
+              <span class="arch-bullet" aria-hidden="true"></span>
+              Ambiente premium no coração do Lago Sul, Brasília
+            </li>
+            <li class="sobre__highlight-item">
+              <span class="arch-bullet" aria-hidden="true"></span>
+              Estacionamento amplo e gratuito para alunos e visitantes
+            </li>
+          </ul>
+
+          <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+             class="btn btn--whatsapp wa-btn"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Falar no WhatsApp para agendar aula experimental"
+             data-wa-location="sobre">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         4. SERVIÇOS / MODALIDADES
+         4. SERVIÇOS / MODALIDADES — fileira editorial alternada
     ═══════════════════════════════════════════════════════════════════════ -->
     <section id="servicos" class="section-pad section-alt" aria-labelledby="servicos-title">
       <div class="container">
 
-        <div class="servicos__intro fade-in">
-          <span class="section-label">Nossos Serviços</span>
-          <h2 id="servicos-title">Modalidades para cada objetivo</h2>
-          <div class="ornament"><div class="ornament__dot"></div></div>
-          <p>Nossas aulas de pilates no Lago Sul vão do Pilates clínico à qualidade de vida — cada modalidade é adaptada à sua realidade, histórico de saúde e metas pessoais.</p>
+        <div class="section-head section-head--center fade-in">
+          <h2 id="servicos-title">Seis modalidades para cada fase da vida</h2>
+          <p class="lede" style="margin-inline:auto;">Do Pilates clínico à qualidade de vida — cada modalidade é adaptada à sua realidade, histórico de saúde e metas pessoais.</p>
         </div>
 
-        <div class="servicos__grid">
+        <div class="servicos__list">
 
-          <!-- Card 1: Pilates Clínico -->
-          <article class="service-card fade-in" aria-label="Pilates Clínico">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Pilates Clínico">
+            <div class="service-row__frame">
               <img src="assets/images/services/clinico.jpg"
                    alt="Sessão de Pilates Clínico no Studio Tatiane Lasneaux"
                    width="600" height="400"
@@ -527,18 +511,14 @@
                    style="object-position: center 30%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              </div>
-              <h3 class="service-card__title">Pilates Clínico</h3>
-              <p class="service-card__desc">Protocolo terapêutico para disfunções musculoesqueléticas, dores crônicas e condições de saúde. Acompanhamento seguro e baseado em evidências.</p>
+            <div>
+              <h3 class="service-row__title">Pilates Clínico</h3>
+              <p class="service-row__desc">Protocolo terapêutico para disfunções musculoesqueléticas, dores crônicas e condições de saúde. Acompanhamento seguro e baseado em evidências.</p>
             </div>
           </article>
 
-          <!-- Card 2: Reabilitação -->
-          <article class="service-card fade-in fade-in--delay-1" aria-label="Pilates para Reabilitação">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Pilates para Reabilitação">
+            <div class="service-row__frame">
               <img src="assets/images/services/reabilitacao.jpg"
                    alt="Pilates para Reabilitação no Studio Tatiane Lasneaux"
                    width="600" height="400"
@@ -546,18 +526,14 @@
                    style="object-position: center 25%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 12.5l8 8 8-8-8-8z"/><path d="M12 4.5v15"/></svg>
-              </div>
-              <h3 class="service-card__title">Pilates para Reabilitação</h3>
-              <p class="service-card__desc">Recuperação pós-cirúrgica e pós-lesão com acompanhamento progressivo e seguro, em parceria com médicos e fisioterapeutas.</p>
+            <div>
+              <h3 class="service-row__title">Pilates para Reabilitação</h3>
+              <p class="service-row__desc">Recuperação pós-cirúrgica e pós-lesão com acompanhamento progressivo e seguro, em parceria com médicos e fisioterapeutas.</p>
             </div>
           </article>
 
-          <!-- Card 3: Alongamento -->
-          <article class="service-card fade-in fade-in--delay-2" aria-label="Alongamento e Mobilidade">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Alongamento e Mobilidade">
+            <div class="service-row__frame">
               <img src="assets/images/services/alongamento.jpg"
                    alt="Aula de Alongamento e Mobilidade no Studio Tatiane Lasneaux"
                    width="600" height="400"
@@ -565,36 +541,28 @@
                    style="object-position: center 20%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><path d="M5.5 14.5l3-5 3.5 2 3-4 4 6.5"/><path d="M3 18h18"/></svg>
-              </div>
-              <h3 class="service-card__title">Alongamento e Mobilidade</h3>
-              <p class="service-card__desc">Amplia a amplitude de movimento, reduz tensões musculares e promove leveza e bem-estar no dia a dia.</p>
+            <div>
+              <h3 class="service-row__title">Alongamento e Mobilidade</h3>
+              <p class="service-row__desc">Amplia a amplitude de movimento, reduz tensões musculares e promove leveza e bem-estar no dia a dia.</p>
             </div>
           </article>
 
-          <!-- Card 4: Condicionamento -->
-          <article class="service-card fade-in" aria-label="Condicionamento Físico">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Condicionamento Físico">
+            <div class="service-row__frame">
               <img src="assets/images/services/condicionamento.jpg"
                    alt="Condicionamento Físico com Pilates no Studio Tatiane Lasneaux"
                    width="600" height="400"
                    loading="lazy"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M2 12h4M18 12h4"/><rect x="4" y="9" width="2" height="6" rx="1"/><rect x="18" y="9" width="2" height="6" rx="1"/></svg>
-              </div>
-              <h3 class="service-card__title">Condicionamento Físico</h3>
-              <p class="service-card__desc">Desenvolva força, resistência e desempenho com segurança. Protocolos progressivos adaptados ao seu nível e objetivo.</p>
+            <div>
+              <h3 class="service-row__title">Condicionamento Físico</h3>
+              <p class="service-row__desc">Desenvolva força, resistência e desempenho com segurança. Protocolos progressivos adaptados ao seu nível e objetivo.</p>
             </div>
           </article>
 
-          <!-- Card 5: Qualidade de Vida -->
-          <article class="service-card fade-in fade-in--delay-1" aria-label="Qualidade de Vida">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Qualidade de Vida">
+            <div class="service-row__frame">
               <img src="assets/images/services/qualidade.jpg"
                    alt="Pilates para Qualidade de Vida no Studio Tatiane Lasneaux"
                    width="600" height="400"
@@ -602,18 +570,14 @@
                    style="object-position: center 20%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-              </div>
-              <h3 class="service-card__title">Qualidade de Vida</h3>
-              <p class="service-card__desc">Envelheça com saúde, autonomia e disposição. O Pilates transforma a relação com o corpo em qualquer fase da vida.</p>
+            <div>
+              <h3 class="service-row__title">Qualidade de Vida</h3>
+              <p class="service-row__desc">Envelheça com saúde, autonomia e disposição. O Pilates transforma a relação com o corpo em qualquer fase da vida.</p>
             </div>
           </article>
 
-          <!-- Card 6: Personalizado -->
-          <article class="service-card fade-in fade-in--delay-2" aria-label="Atendimento Personalizado">
-            <div class="service-card__img">
+          <article class="service-row fade-in" aria-label="Atendimento Personalizado">
+            <div class="service-row__frame">
               <img src="assets/images/services/personalizado.jpg"
                    alt="Atendimento Personalizado de Pilates no Studio Tatiane Lasneaux"
                    width="600" height="400"
@@ -621,12 +585,9 @@
                    style="object-position: center 30%;"
                    data-placeholder="assets/images/placeholder-card.svg">
             </div>
-            <div class="service-card__body">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
-              </div>
-              <h3 class="service-card__title">Atendimento Personalizado</h3>
-              <p class="service-card__desc">Sessões individuais com planejamento específico e evolução adaptada ao seu ritmo. A experiência mais exclusiva do estúdio.</p>
+            <div>
+              <h3 class="service-row__title">Atendimento Personalizado</h3>
+              <p class="service-row__desc">Sessões individuais com planejamento específico e evolução adaptada ao seu ritmo. A experiência mais exclusiva do estúdio.</p>
             </div>
           </article>
 
@@ -649,74 +610,60 @@
     <!-- ══════════════════════════════════════════════════════════════════
          5. DIFERENCIAIS
     ═══════════════════════════════════════════════════════════════════════ -->
-    <section id="diferenciais" class="section-pad" aria-labelledby="diferenciais-title">
+    <section id="diferenciais" class="section-pad section-dark" aria-labelledby="diferenciais-title">
       <div class="container">
 
-        <div class="diferenciais__intro fade-in">
-          <span class="section-label">Por que nos escolher</span>
+        <div class="section-head fade-in">
           <h2 id="diferenciais-title">Uma experiência diferente desde o primeiro dia</h2>
-          <div class="ornament"><div class="ornament__dot"></div></div>
-          <p>Cada detalhe foi pensado para que sua experiência seja transformadora, segura e acolhedora.</p>
+          <p class="lede">Cada detalhe foi pensado para que sua experiência seja transformadora, segura e acolhedora.</p>
         </div>
 
-        <div class="diferenciais__grid">
+        <div class="diferenciais__list">
 
-          <div class="diferencial-item fade-in">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Atendimento humanizado</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Atendimento humanizado</h3>
               <p>Você não é um número aqui. Conhecemos cada aluno pelo nome, histórico e objetivo — e adaptamos tudo para você.</p>
             </div>
           </div>
 
-          <div class="diferencial-item fade-in fade-in--delay-1">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Equipe altamente qualificada</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Equipe altamente qualificada</h3>
               <p>Professoras com formação especializada, atualização constante e paixão genuína pelo Pilates e pelo bem-estar dos alunos.</p>
             </div>
           </div>
 
-          <div class="diferencial-item fade-in fade-in--delay-2">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Avaliação postural inclusa</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Avaliação postural inclusa</h3>
               <p>Na primeira visita você recebe uma avaliação postural e funcional completa — sem custo adicional, sem surpresas.</p>
             </div>
           </div>
 
-          <div class="diferencial-item fade-in">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Ambiente premium no Lago Sul</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Ambiente premium no Lago Sul</h3>
               <p>Espaço sofisticado, projetado para transmitir bem-estar desde a entrada. Um local que você terá prazer em frequentar.</p>
             </div>
           </div>
 
-          <div class="diferencial-item fade-in fade-in--delay-1">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Estacionamento gratuito</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Estacionamento gratuito</h3>
               <p>Estacionamento amplo e gratuito para todos os alunos e visitantes. Venha de carro sem preocupação.</p>
             </div>
           </div>
 
-          <div class="diferencial-item fade-in fade-in--delay-2">
-            <div class="diferencial-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </div>
-            <div class="diferencial-item__content">
-              <h4>Resposta rápida no WhatsApp</h4>
+          <div class="diferencial-row fade-in">
+            <span class="diferencial-row__bullet" aria-hidden="true"></span>
+            <div>
+              <h3>Resposta rápida no WhatsApp</h3>
               <p>Dúvidas, agendamentos e informações respondidos rapidamente pelo WhatsApp. Atendimento ágil e direto ao ponto.</p>
             </div>
           </div>
@@ -725,115 +672,79 @@
       </div>
     </section>
 
+    <div class="arch-divider arch-divider--up" aria-hidden="true"></div>
+
     <!-- ══════════════════════════════════════════════════════════════════
          6. DEPOIMENTOS
     ═══════════════════════════════════════════════════════════════════════ -->
     <section id="depoimentos" class="section-pad section-alt" aria-labelledby="depoimentos-title">
       <div class="container">
 
-        <div class="depoimentos__intro fade-in">
-          <span class="section-label">Depoimentos</span>
+        <div class="section-head section-head--center fade-in">
           <h2 id="depoimentos-title">O que nossos alunos dizem</h2>
-          <div class="ornament"><div class="ornament__dot"></div></div>
-          <p>⭐ 5,0 no Google · 77 avaliações verificadas. Veja o que quem já vive essa transformação tem a dizer.</p>
+          <p class="lede" style="margin-inline:auto;">⭐ 5,0 no Google · 77 avaliações verificadas. Veja o que quem já vive essa transformação tem a dizer.</p>
         </div>
 
         <div class="depoimentos__grid">
 
-          <!-- Depoimento 1 -->
           <article class="testimonial-card fade-in" aria-label="Depoimento de Elisabeth Dantas">
-            <div class="testimonial-card__header">
-              <div class="testimonial-card__avatar">
-                <img src="assets/images/testimonials/elisabeth.jpg"
-                     alt="Foto de Elisabeth Dantas"
-                     width="52" height="52"
-                     loading="lazy"
-                     data-placeholder="assets/images/placeholder-square.svg">
-              </div>
-              <div class="testimonial-card__meta">
-                <div class="testimonial-card__name">Elisabeth Dantas</div>
-                <div class="stars" aria-label="5 estrelas">
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial-card__text quote-mark">Sou aluna do studio de pilates há mais de 10 anos. Adoro o espaço, e as professoras são excelentes e muito atenciosas. O local é de muita descontração e alegria. Recomendo.</p>
+            <div class="testimonial-card__footer">
+              <span class="testimonial-card__name">Elisabeth Dantas</span>
+              <div class="stars" aria-label="5 estrelas">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
             </div>
-            <p class="testimonial-card__text">"Sou aluna do studio de pilates há mais de 10 anos. Adoro o espaço, e as professoras são excelentes e muito atenciosas. O local é de muita descontração e alegria. Recomendo."</p>
           </article>
 
-          <!-- Depoimento 2 -->
           <article class="testimonial-card fade-in fade-in--delay-1" aria-label="Depoimento de Paulo Leite">
-            <div class="testimonial-card__header">
-              <div class="testimonial-card__avatar">
-                <img src="assets/images/testimonials/paulo.jpg"
-                     alt="Foto de Paulo Leite"
-                     width="52" height="52"
-                     loading="lazy"
-                     data-placeholder="assets/images/placeholder-square.svg">
-              </div>
-              <div class="testimonial-card__meta">
-                <div class="testimonial-card__name">Paulo Leite</div>
-                <div class="stars" aria-label="5 estrelas">
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial-card__text quote-mark">Excelente atendimento. Melhor estúdio de pilates do DF. Um dos melhores do país. Profissionais com excelente formação.</p>
+            <div class="testimonial-card__footer">
+              <span class="testimonial-card__name">Paulo Leite</span>
+              <div class="stars" aria-label="5 estrelas">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
             </div>
-            <p class="testimonial-card__text">"Excelente atendimento. Melhor estúdio de pilates do DF. Um dos melhores do país. Profissionais com excelente formação."</p>
           </article>
 
-          <!-- Depoimento 3 -->
           <article class="testimonial-card fade-in fade-in--delay-2" aria-label="Depoimento de Patricia Nasr">
-            <div class="testimonial-card__header">
-              <div class="testimonial-card__avatar">
-                <img src="assets/images/testimonials/patricia.jpg"
-                     alt="Foto de Patricia Nasr"
-                     width="52" height="52"
-                     loading="lazy"
-                     data-placeholder="assets/images/placeholder-square.svg">
-              </div>
-              <div class="testimonial-card__meta">
-                <div class="testimonial-card__name">Patricia Nasr</div>
-                <div class="stars" aria-label="5 estrelas">
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial-card__text quote-mark">Adoro!!! Ambiente muito limpo e arejado.</p>
+            <div class="testimonial-card__footer">
+              <span class="testimonial-card__name">Patricia Nasr</span>
+              <div class="stars" aria-label="5 estrelas">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
             </div>
-            <p class="testimonial-card__text">"Adoro!!! Ambiente muito limpo e arejado."</p>
           </article>
 
-          <!-- Depoimento 4 -->
           <article class="testimonial-card fade-in fade-in--delay-3" aria-label="Depoimento de Eliane Brandão">
-            <div class="testimonial-card__header">
-              <div class="testimonial-card__avatar">
-                <img src="assets/images/testimonials/eliane.jpg"
-                     alt="Foto de Eliane Brandão"
-                     width="52" height="52"
-                     loading="lazy"
-                     data-placeholder="assets/images/placeholder-square.svg">
-              </div>
-              <div class="testimonial-card__meta">
-                <div class="testimonial-card__name">Eliane Brandão</div>
-                <div class="stars" aria-label="5 estrelas">
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial-card__text quote-mark">Excelente studio, as professoras muito dedicadas e gentis.</p>
+            <div class="testimonial-card__footer">
+              <span class="testimonial-card__name">Eliane Brandão</span>
+              <div class="stars" aria-label="5 estrelas">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
             </div>
-            <p class="testimonial-card__text">"Excelente studio, as professoras muito dedicadas e gentis."</p>
           </article>
 
         </div>
@@ -862,39 +773,36 @@
     <!-- ══════════════════════════════════════════════════════════════════
          7. AULA EXPERIMENTAL (CTA PRINCIPAL)
     ═══════════════════════════════════════════════════════════════════════ -->
-    <section id="aula-experimental" class="experimental section-dark" aria-labelledby="experimental-title">
-      <div class="container">
-        <div class="experimental__inner">
+    <section id="aula-experimental" class="experimental section-pad section-dark" aria-labelledby="experimental-title">
+      <div class="container experimental__inner">
 
-          <span class="section-label" style="color:var(--gold-400);">Oferta especial</span>
-          <h2 id="experimental-title" class="experimental__title">Agende sua<br>Aula Experimental</h2>
-          <p class="experimental__subtitle">Sem compromisso. Venha conhecer o estúdio e sentir na prática.</p>
+        <h2 id="experimental-title" class="experimental__title">Agende sua Aula Experimental</h2>
+        <p class="experimental__subtitle">Sem compromisso. Venha conhecer o estúdio e sentir na prática.</p>
 
-          <ul class="experimental__bullets" aria-label="Benefícios da aula experimental">
-            <li class="experimental__bullet">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-              <span><strong>Sem compromisso</strong> — sem obrigação de matrícula</span>
-            </li>
-            <li class="experimental__bullet">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-              <span><strong>Avaliação gratuita</strong> — avaliação postural e funcional completa na primeira visita</span>
-            </li>
-            <li class="experimental__bullet">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-              <span><strong>Atendimento imediato</strong> — resposta rápida pelo WhatsApp</span>
-            </li>
-          </ul>
+        <ul class="experimental__bullets" aria-label="Benefícios da aula experimental">
+          <li class="experimental__bullet">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+            <span><strong>Sem compromisso</strong> — sem obrigação de matrícula</span>
+          </li>
+          <li class="experimental__bullet">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+            <span><strong>Avaliação gratuita</strong> — avaliação postural e funcional completa na primeira visita</span>
+          </li>
+          <li class="experimental__bullet">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+            <span><strong>Atendimento imediato</strong> — resposta rápida pelo WhatsApp</span>
+          </li>
+        </ul>
 
-          <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-             class="btn btn--gold btn--lg wa-btn"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Quero marcar minha aula experimental – falar no WhatsApp agora"
-             data-wa-location="experimental">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            Quero marcar minha aula experimental
-          </a>
+        <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+           class="btn btn--gold btn--lg wa-btn"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Quero marcar minha aula experimental – falar no WhatsApp agora"
+           data-wa-location="experimental">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Quero marcar minha aula experimental
+        </a>
 
-        </div>
       </div>
     </section>
 
@@ -902,86 +810,84 @@
          8. LOCALIZAÇÃO E CONTATO
     ═══════════════════════════════════════════════════════════════════════ -->
     <section id="localizacao" class="section-pad" aria-labelledby="localizacao-title">
-      <div class="container">
-        <div class="localizacao__grid">
+      <div class="container localizacao__grid">
 
-          <div class="localizacao__info fade-in">
-            <span class="section-label">Como chegar</span>
+        <div class="localizacao__info fade-in">
+          <div class="section-head">
             <h2 id="localizacao-title">Localização e Contato</h2>
-            <div class="ornament"><div class="ornament__dot"></div></div>
-
-            <div class="localizacao__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-              <div class="localizacao__item-content">
-                <div class="localizacao__item-label">Endereço</div>
-                <p class="localizacao__item-value">
-                  SHIS QI 11 Bloco M, Loja 10<br>
-                  Lago Sul, Brasília – DF<br>
-                  CEP 71625-620
-                </p>
-              </div>
-            </div>
-
-            <div class="localizacao__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-              <div class="localizacao__item-content">
-                <div class="localizacao__item-label">Estacionamento</div>
-                <p class="localizacao__item-value">Amplo e gratuito para alunos e visitantes</p>
-              </div>
-            </div>
-
-            <div class="localizacao__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-              <div class="localizacao__item-content">
-                <div class="localizacao__item-label">Horário de funcionamento</div>
-                <p class="localizacao__item-value">
-                  Segunda a Sexta: 6h às 21h<br>
-                  Sábado: 8h às 14h
-                </p>
-              </div>
-            </div>
-
-            <div class="localizacao__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.7 9.9a19.79 19.79 0 01-3.07-8.67A2 2 0 012.6 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.58a16 16 0 006.29 6.29l.95-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <div class="localizacao__item-content">
-                <div class="localizacao__item-label">WhatsApp</div>
-                <p class="localizacao__item-value">
-                  <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-                     class="wa-btn"
-                     target="_blank" rel="noopener noreferrer"
-                     aria-label="Enviar mensagem pelo WhatsApp"
-                     data-wa-location="localizacao-tel">(61) 99247-2800</a>
-                </p>
-              </div>
-            </div>
-
-            <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-               class="btn btn--whatsapp wa-btn"
-               style="margin-top:24px;"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Falar no WhatsApp – Quero marcar minha aula experimental"
-               data-wa-location="localizacao">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-              Falar no WhatsApp
-            </a>
           </div>
 
-          <!-- MAPA GOOGLE -->
-          <div class="localizacao__map fade-in fade-in--delay-2">
-            <iframe
-              src="https://maps.google.com/maps?q=Pilates+Lago+Sul+-+Studio+Tatiane+Lasneaux&z=17&output=embed"
-              width="100%"
-              height="420"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa – Studio de Pilates Tatiane Lasneaux, SHIS QI 11 Bloco M, Lago Sul, Brasília"
-              aria-label="Mapa de localização do Studio de Pilates Tatiane Lasneaux">
-            </iframe>
+          <div class="localizacao__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            <div class="localizacao__item-content">
+              <div class="localizacao__item-label">Endereço</div>
+              <p class="localizacao__item-value">
+                SHIS QI 11 Bloco M, Loja 10<br>
+                Lago Sul, Brasília – DF<br>
+                CEP 71625-620
+              </p>
+            </div>
           </div>
 
+          <div class="localizacao__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            <div class="localizacao__item-content">
+              <div class="localizacao__item-label">Estacionamento</div>
+              <p class="localizacao__item-value">Amplo e gratuito para alunos e visitantes</p>
+            </div>
+          </div>
+
+          <div class="localizacao__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            <div class="localizacao__item-content">
+              <div class="localizacao__item-label">Horário de funcionamento</div>
+              <p class="localizacao__item-value">
+                Segunda a Sexta: 6h às 21h<br>
+                Sábado: 8h às 14h
+              </p>
+            </div>
+          </div>
+
+          <div class="localizacao__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.7 9.9a19.79 19.79 0 01-3.07-8.67A2 2 0 012.6 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.58a16 16 0 006.29 6.29l.95-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div class="localizacao__item-content">
+              <div class="localizacao__item-label">WhatsApp</div>
+              <p class="localizacao__item-value">
+                <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+                   class="wa-btn"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Enviar mensagem pelo WhatsApp"
+                   data-wa-location="localizacao-tel">(61) 99247-2800</a>
+              </p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+             class="btn btn--whatsapp wa-btn"
+             style="margin-top:24px;"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Falar no WhatsApp – Quero marcar minha aula experimental"
+             data-wa-location="localizacao">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
         </div>
+
+        <!-- MAPA GOOGLE -->
+        <div class="localizacao__map fade-in fade-in--delay-2">
+          <iframe
+            src="https://maps.google.com/maps?q=Pilates+Lago+Sul+-+Studio+Tatiane+Lasneaux&z=17&output=embed"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa – Studio de Pilates Tatiane Lasneaux, SHIS QI 11 Bloco M, Lago Sul, Brasília"
+            aria-label="Mapa de localização do Studio de Pilates Tatiane Lasneaux">
+          </iframe>
+        </div>
+
       </div>
     </section>
 
@@ -991,11 +897,9 @@
     <section id="faq" class="section-pad section-alt" aria-labelledby="faq-title">
       <div class="container">
 
-        <div class="faq__intro fade-in">
-          <span class="section-label">Perguntas Frequentes</span>
+        <div class="section-head section-head--center fade-in">
           <h2 id="faq-title">Tire suas dúvidas</h2>
-          <div class="ornament"><div class="ornament__dot"></div></div>
-          <p>Não encontrou o que procura? Fale diretamente no WhatsApp — respondemos rapidamente.</p>
+          <p class="lede" style="margin-inline:auto;">Não encontrou o que procura? Fale diretamente no WhatsApp — respondemos rapidamente.</p>
         </div>
 
         <div class="faq__list" role="list">
@@ -1097,23 +1001,20 @@
     <!-- ══════════════════════════════════════════════════════════════════
          10. CTA FINAL
     ═══════════════════════════════════════════════════════════════════════ -->
-    <section id="cta-final" class="cta-final section-dark" aria-label="Chamada final para ação">
-      <div class="container">
-        <div class="cta-final__inner">
-          <span class="section-label" style="color:var(--gold-400);">Comece hoje</span>
-          <h2 class="cta-final__title">Pronto para começar<br>sua transformação?</h2>
-          <p class="cta-final__subtitle">
-            Pilates é saúde. É bem-estar. É qualidade de vida. Dê o primeiro passo agora — agende sua aula experimental sem compromisso.
-          </p>
-          <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
-             class="btn btn--gold btn--lg wa-btn"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Quero marcar minha aula experimental – falar no WhatsApp"
-             data-wa-location="cta-final">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            Quero marcar minha aula experimental
-          </a>
-        </div>
+    <section id="cta-final" class="cta-final section-pad section-dark" aria-label="Chamada final para ação">
+      <div class="container cta-final__inner">
+        <h2 class="cta-final__title">Pronto para começar sua transformação?</h2>
+        <p class="cta-final__subtitle">
+          Pilates é saúde. É bem-estar. É qualidade de vida. Dê o primeiro passo agora — agende sua aula experimental sem compromisso.
+        </p>
+        <a href="https://wa.me/5561992472800?text=Quero%20marcar%20minha%20aula%20experimental"
+           class="btn btn--gold btn--lg wa-btn"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Quero marcar minha aula experimental – falar no WhatsApp"
+           data-wa-location="cta-final">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Quero marcar minha aula experimental
+        </a>
       </div>
     </section>
 
@@ -1207,7 +1108,7 @@
      aria-label="Falar no WhatsApp – Quero marcar minha aula experimental"
      data-wa-location="float">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    <span class="wa-float__text">Falar no WhatsApp</span>
+    <span class="visually-hidden">Falar no WhatsApp</span>
   </a>
 
   <!-- ══════════════════════════════════════════════════════════════════

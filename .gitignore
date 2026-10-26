@@ -4,3 +4,10 @@
 # Editor
 .vscode/
 .idea/
+
+# AI assistant tooling (skills, agents, local workflow state)
+.claude/
+.agents/
+.codex/
+.impeccable/
+skills-lock.json
